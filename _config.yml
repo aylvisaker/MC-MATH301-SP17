@@ -5,6 +5,7 @@ paginate: 25
 paginate_path: "/posts/page/:num/"
 url: http://aylvisaker.github.io/MC-MATH301-SP17/ # add site url http://example.com/
 blog_theme: light # Or use dark
+baseurl: /MC-MATH301-SP17
 
 # Optional settings
 
