@@ -39,13 +39,14 @@ Now consider the prime factorization(s) of \\(y\\):
 
 These cannot be the same because the former factorization has an even exponent on the prime \\(2\\), while the latter has an odd exponent on the prime \\(2\\). This contradicts the uniqueness part of the fundamental theorem of arithmetic for the integer \\(y\\). Our supposition that \\(\\sqrt{2}\\in\\mathbb{Q}\\) must have been incorrect. \\(\\Box\\)
 
-### Set notation
+### Set notation and basic definitions
 
-* \\(x\\in S\\) means that \\(x\\) is an **element** (i.e. **member**) of \\(S\\). \\(x\\notin S\\) means that \\(x\\) is *not* an element of \\(S\\).
+* \\(x\\in S\\) means that \\(x\\) is an **element** (i.e. **member**) of \\(S\\) and \\(x\\notin S\\) means that \\(x\\) is *not* an element of \\(S\\).
 * \\(\\emptyset = \\{\\}\\) is the **empty set**. Sets which have at least one element are called **non-empty**.
 * If \\(A\\) and \\(B\\) are sets, then 
-  * \\(A\\cap B = \\{x\\mid x\\in A\\text{ and } x\\in B\\) is the **intersection** of \\(A\\) and \\(B\\).
-  * \\(A\\cup B = \\{x\\mid x\\in A\\text{ or }  x\\in B\\) is the **union** of \\(A\\) and \\(B\\). 
-  * \\(A\\subset B\\) means that each element of \\(A\\) is also an element of \\(B\\). In this case we say that \\(A\\) is **contained** in  (i.e. a **subset** of) \\(B\\). It is sometimes convenient to write \\(B\supset A\\) instead.
+  * \\(A\\cap B = \\{x\\mid x\\in A\\text{ and } x\\in B\\}\\) is the **intersection** of \\(A\\) and \\(B\\).
+  * \\(A\\cup B = \\{x\\mid x\\in A\\text{ or }  x\\in B\\}\\) is the **union** of \\(A\\) and \\(B\\). 
+  * \\(A\\subset B\\) and \\(B\\supset A\\) both mean that each element of \\(A\\) is also an element of \\(B\\). We say that \\(A\\) is **contained** in  (i.e. a **subset** of) \\(B\\).
+  * \\(A=B\\) means that \\(A\\subset B\\) and \\(B\\subset A\\).
 
 # Ordered Sets
