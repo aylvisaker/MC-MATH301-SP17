@@ -47,22 +47,23 @@ These cannot be the same because the former factorization has an even exponent o
   * \\(A=B\\) means that \\(A\\subset B\\) and \\(B\\subset A\\).
 
 # Ordered Sets
-* An **order** on a set $S$ is a relation (which we denote by $<$) with the following two properties:
-	* If $x,y\in S$ then one and only one of the following holds:
-		* $x<y$
-		* $y<x$
-		* $x=y$
-	*If $x,y,z\in S$, $x<y$, and $y<z$, then $x<z$.
-* The relations $\leq, >, \geq$ can be defined in terms of $<$ and have all of the properties you would expect.
-* An **ordered set** is a set on which an order can be defined. For example $\mathbb{Q}$ is an ordered set when $r<s$ is taken to mean that $s-r$ is positive.
-* Suppose $S$ is an ordered set and $E\subset S$. If there is some $\beta\in S$ such that $x\leq\beta$ for every $x\in E$, then we say that $E$ is **bounded above** and that $\beta$ is an **upper bound**.
-* **Bounded below** and **lower bound** are defined analogously.
-* Suppose $S$ is an ordered set and $E\subset S$ has an upper bound. Suppose that there is some $\alpha\in S$ such that:
-	* $\alpha$ is an upper bound for $E$, and
-	* if $\gamma<\alpha$ then $\gamma$ is not an upper bound for $E$.
-	then we say $\alpha$ is the **least upper bound** of $E$, or the **supremum** of $E$.
-* If $\alpha$ is the supremum of $E$, we write $\alpha=\sup E$.
-* The **greatest lower bound**, or **infimum**, is defined analogously and denoted $\alpha=\inf E$.
+**Definition 1.5**: An **order** on a set $S$ is a relation (which we denote by $<$) with the following two properties:
+* If $x,y\in S$ then one and only one of the following holds:
+	* $x<y$
+	* $y<x$
+	* $x=y$
+* If $x,y,z\in S$, $x<y$, and $y<z$, then $x<z$.
+
+The relations $\leq, >, \geq$ can be defined in terms of $<$ and have all of the properties you would expect.
+
+**Definition 1.6**: An **ordered set** is a set on which an order can be defined. For example $\mathbb{Q}$ is an ordered set when $r<s$ is taken to mean that $s-r$ is positive.
+
+**Definition 1.7**: Suppose $S$ is an ordered set and $E\subset S$. If there is some $\beta\in S$ such that $x\leq\beta$ for every $x\in E$, then we say that $E$ is **bounded above** and that $\beta$ is an **upper bound**. **Bounded below** and **lower bound** are defined analogously.
+
+**Definition 1.8**: Suppose $S$ is an ordered set and $E\subset S$ has an upper bound. Suppose that there is some $\alpha\in S$ such that:
+* $\alpha$ is an upper bound for $E$, and
+* if $\gamma<\alpha$ then $\gamma$ is not an upper bound for $E$.
+then we say $\alpha$ is the **least upper bound** of $E$, or the **supremum** of $E$. If $\alpha$ is the supremum of $E$, we write $\alpha=\sup E$. The **greatest lower bound**, or **infimum**, is defined analogously and denoted $\alpha=\inf E$.
 
 # Example 1
 Let $A = \\{x\in\mathbb{Q}^{+}\mid x^2<2\\}$ and $B = \\{x\in\mathbb{Q}^{+}\mid x^2>2\\}$. Then $A$ has no least upper bound and $B$ has no greatest lower bound. We prove the former. Let $p$ be an upper bound for $A$, and let $q = p-\frac{p^2-2}{p+2}$. It is straightforward to show that $q\in\mathbb{Q}$. Since $p\in B$ (think about that), it follows that $p^2-2>0$, so $q<p$. Now consider
@@ -151,8 +152,8 @@ Note in particular that there are no consistent definitions for:
 
 # The Complex Field
 **Definition 1.24**: A **complex number** is an ordered pair $(a,b)$ of real numbers.For complex numbers $x=(a,b)$ and $y=(c,d)$ we write $x=y$ precisely when $a=c$ and $b=d$. Moreover, we define:
-	* $x+y=(a+c,b+d)$
-	* $x\cdot y=(ac-ba,ad+bc)$
+* $x+y=(a+c,b+d)$
+* $x\cdot y=(ac-ba,ad+bc)$
 
 According to these definitions, $(0,0)$ is an additive identity and $(1,0)$ is a multiplicative identity.
 
