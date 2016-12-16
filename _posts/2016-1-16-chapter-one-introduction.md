@@ -118,18 +118,18 @@ In any field, and for any integer $n$, the expressions $x-y$, $x/y$, $x+y+z$, $x
 $\mathbb{Q}$ is an example of an ordered field.
 
 **Proposition 1.18**: Let $x,y,z$ be arbitrary elements of the ordered field $F$.
-	* If $x>0$ then $-x<0$ and vice versa
-	* If $x>0$ and $y<z$ then $xy<xz$
-	* If $x<0$ and $y<z$ then $xy>xz$
-	* If $x\neq 0$ then $x^2>0$
-	* If $0<x<y$ then $0<1/y<1/x$
+* If $x>0$ then $-x<0$ and vice versa
+* If $x>0$ and $y<z$ then $xy<xz$
+* If $x<0$ and $y<z$ then $xy>xz$
+* If $x\neq 0$ then $x^2>0$
+* If $0<x<y$ then $0<1/y<1/x$
 
 # The Real Field
 **Theorem 1.19**: There exists an ordered field $\mathbb{R}$ with the least upper bound property. Moreover, $\mathbb{Q}$ is (isomorphic to) a subfield of $\mathbb{R}$. The members of this field are called the **real numbers**.
 
 **Theorem 1.20**: Let $x$ and $y$ be arbitrary elements of $\mathbb{R}$.
-	* *The Archimedean Property:* If $x>0$ then there is some $n\in\mathbb{Z}^{+}$ such that $nx>y$.
-	* *Density of the Rationals:* If $x<y$ then there is some $p\in\mathbb{Q}$ such that $x<p<y$.
+* *The Archimedean Property:* If $x>0$ then there is some $n\in\mathbb{Z}^{+}$ such that $nx>y$.
+* *Density of the Rationals:* If $x<y$ then there is some $p\in\mathbb{Q}$ such that $x<p<y$.
 	
 **Proposition 1.21**: Let $x\in\mathbb{R}$, $x>0$, and $n>0$. Then there is exactly one $y\in\mathbb{R}$ such that $y^n=x$. We usually write $y=\sqrt[n]{x}$ or $y=x^{\frac1n}$.
 
