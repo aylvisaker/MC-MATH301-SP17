@@ -3,7 +3,7 @@ layout: post
 title: "Chapter 1 Notes"
 categories: [notes]
 tags: [notes]
-description: Course prerequisites.
+description: MC-MATH301-SP17
 ---
 
 # Introduction
