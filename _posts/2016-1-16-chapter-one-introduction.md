@@ -64,13 +64,14 @@ These cannot be the same because the former factorization has an even exponent o
 * If $\alpha$ is the supremum of $E$, we write $\alpha=\sup E$.
 * The **greatest lower bound**, or **infimum**, is defined analogously and denoted $\alpha=\inf E$.
 
-### Examples
-* Let $A = \\{x\in\mathbb{Q}^{+}\mid x^2<2\\}$ and $B = \\{x\in\mathbb{Q}^{+}\mid x^2>2\\}$. Then $A$ has no least upper bound and $B$ has no greatest lower bound. We prove the former.
-	* Let $p$ be an upper bound for $A$, and let $q = p-\frac{p^2-2}{p+2}$. It is straightforward to show that $q\in\mathbb{Q}$. Since $p\in B$ (think about that), it follows that $p^2-2>0$, so $q<p$. Now consider
+# Example 1
+Let $A = \\{x\in\mathbb{Q}^{+}\mid x^2<2\\}$ and $B = \\{x\in\mathbb{Q}^{+}\mid x^2>2\\}$. Then $A$ has no least upper bound and $B$ has no greatest lower bound. We prove the former. Let $p$ be an upper bound for $A$, and let $q = p-\frac{p^2-2}{p+2}$. It is straightforward to show that $q\in\mathbb{Q}$. Since $p\in B$ (think about that), it follows that $p^2-2>0$, so $q<p$. Now consider
 
 $$q^2-2=\left(\frac{2p+2}{p+2}\right)^2-2=\frac{(4p^2+8p+4)}{(p+2)^2}-\frac{2p^2+8p+8}{(p+2)^2}=\frac{2(p^2-2}{(p+2)^2}$$
 
-	* Since $q^2-2>0$, we conclude $q\in B$. Therefore $q$ is an upper bound for $A$, which is both rational and smaller than $p$. Given an arbitrary upper bound, we have constructed a smaller upper bound. Surely this means there can be no *least* upper bound.
+Since $q^2-2>0$, we conclude $q\in B$. Therefore $q$ is an upper bound for $A$, which is both rational and smaller than $p$. Given an arbitrary upper bound, we have constructed a smaller upper bound. Surely this means there can be no *least* upper bound.
+
+# Examples 2-3
 * Let $A = \\{x\in\mathbb{Q}\mid x<0\\}$ and $B=\\{x\in\mathbb{Q}\mid x\leq 0\\}$. Then $\sup A = \sup B = 0$, and $0\in B$, but $0\notin A$.
 * Let $A = \\{\frac1n\mid n\in\mathbb{Z}^{+}\\}$. Then $\sup A = 1\in A$ and $\inf A = 0\notin A$.
 
@@ -115,6 +116,7 @@ $$q^2-2=\left(\frac{2p+2}{p+2}\right)^2-2=\frac{(4p^2+8p+4)}{(p+2)^2}-\frac{2p^2
 * $xy>0$ if $x>0$ and $y>0$
 
 $\mathbb{Q}$ is an example of an ordered field.
+
 **Proposition 1.18**: Let $x,y,z$ be arbitrary elements of the ordered field $F$.
 	* If $x>0$ then $-x<0$ and vice versa
 	* If $x>0$ and $y<z$ then $xy<xz$
@@ -124,10 +126,13 @@ $\mathbb{Q}$ is an example of an ordered field.
 
 # The Real Field
 **Theorem 1.19**: There exists an ordered field $\mathbb{R}$ with the least upper bound property. Moreover, $\mathbb{Q}$ is (isomorphic to) a subfield of $\mathbb{R}$. The members of this field are called the **real numbers**.
+
 **Theorem 1.20**: Let $x$ and $y$ be arbitrary elements of $\mathbb{R}$.
 	* *The Archimedean Property:* If $x>0$ then there is some $n\in\mathbb{Z}^{+}$ such that $nx>y$.
 	* *Density of the Rationals:* If $x<y$ then there is some $p\in\mathbb{Q}$ such that $x<p<y$.
+	
 **Proposition 1.21**: Let $x\in\mathbb{R}$, $x>0$, and $n>0$. Then there is exactly one $y\in\mathbb{R}$ such that $y^n=x$. We usually write $y=\sqrt[n]{x}$ or $y=x^{\frac1n}$.
+
 **We shall never use decimals, so we do not enter into a detailed discussion of them**
 
 # The Extended Real Number System
@@ -138,6 +143,7 @@ In the extended reals, every non-empty set has a least upper bound (possibly $\i
 * $x/\infty=x/-\infty=0$
 * If $x>0$ then $x\cdot\infty=\infty$ and $x\cdot-\infty=-\infty$
 * If $x<0$ then $x\cdot\infty=-\infty$ and $x\cdot-\infty=-\infty$
+
 Note in particular that there are no consistent definitions for:
 * $0\cdot\pm\infty$
 * $\infty-\infty$
@@ -147,6 +153,7 @@ Note in particular that there are no consistent definitions for:
 **Definition 1.24**: A **complex number** is an ordered pair $(a,b)$ of real numbers.For complex numbers $x=(a,b)$ and $y=(c,d)$ we write $x=y$ precisely when $a=c$ and $b=d$. Moreover, we define:
 	* $x+y=(a+c,b+d)$
 	* $x\cdot y=(ac-ba,ad+bc)$
+
 According to these definitions, $(0,0)$ is an additive identity and $(1,0)$ is a multiplicative identity.
 
 **Theorem 1.25**: The complex numbers, $\mathbb{C}$ form a field.
@@ -176,8 +183,8 @@ According to these definitions, $(0,0)$ is an additive identity and $(1,0)$ is a
 * $\vert\Re(z)\vert \leq \vert z\vert$
 * $\vert z+w\vert\leq \vert z\vert + \vert w\vert$
 
-**Sigma notation**: When $x_1,\dots,x_n$ are complex numbers, in place of $x_1+x_2+\dots+x_n$ we write $\Sum_{i=1}^n x_i$.
+**Sigma notation**: When $x_1,\dots,x_n$ are complex numbers, in place of $x_1+x_2+\dots+x_n$ we write $\sum_{i=1}^n x_i$.
 
-**Theorem 1.35, The Schwarz Inequality**: Let $a_1,\dots,a_n$ and $b_1,\dots,b_n$ be complex numbers. Then
+**Theorem 1.35 - The Schwarz Inequality**: Let $a_1,\dots,a_n$ and $b_1,\dots,b_n$ be complex numbers. Then
 
 $$ \left\vert \sum_{i=1}^n a_i\overline{b_i} \right\vert^2 \leq \left( \sum_{i=1}^n\left\vert a_i \right\vert^2 \right) + \left( \sum_{i=1}^n\left\vert b_i \right\vert^2 \right)$$
