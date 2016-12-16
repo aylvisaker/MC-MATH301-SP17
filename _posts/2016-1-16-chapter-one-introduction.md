@@ -65,38 +65,37 @@ The relations $\leq, >, \geq$ can be defined in terms of $<$ and have all of the
 * if $\gamma<\alpha$ then $\gamma$ is not an upper bound for $E$.
 then we say $\alpha$ is the **least upper bound** of $E$, or the **supremum** of $E$. If $\alpha$ is the supremum of $E$, we write $\alpha=\sup E$. The **greatest lower bound**, or **infimum**, is defined analogously and denoted $\alpha=\inf E$.
 
-# Example 1
-Let $A = \\{x\in\mathbb{Q}^{+}\mid x^2<2\\}$ and $B = \\{x\in\mathbb{Q}^{+}\mid x^2>2\\}$. Then $A$ has no least upper bound and $B$ has no greatest lower bound. We prove the former. Let $p$ be an upper bound for $A$, and let $q = p-\frac{p^2-2}{p+2}$. It is straightforward to show that $q\in\mathbb{Q}$. Since $p\in B$ (think about that), it follows that $p^2-2>0$, so $q<p$. Now consider
+**Example** Let $A = \\{x\in\mathbb{Q}^{+}\mid x^2<2\\}$ and $B = \\{x\in\mathbb{Q}^{+}\mid x^2>2\\}$. Then $A$ has no least upper bound and $B$ has no greatest lower bound. We prove the former. Let $p$ be an upper bound for $A$, and let $q = p-\frac{p^2-2}{p+2}$. It is straightforward to show that $q\in\mathbb{Q}$. Since $p\in B$ (think about that), it follows that $p^2-2>0$, so $q<p$. Now consider
 
 $$q^2-2=\left(\frac{2p+2}{p+2}\right)^2-2=\frac{(4p^2+8p+4)}{(p+2)^2}-\frac{2p^2+8p+8}{(p+2)^2}=\frac{2(p^2-2}{(p+2)^2}$$
 
-Since $q^2-2>0$, we conclude $q\in B$. Therefore $q$ is an upper bound for $A$, which is both rational and smaller than $p$. Given an arbitrary upper bound, we have constructed a smaller upper bound. Surely this means there can be no *least* upper bound.
+Since $q^2-2>0$, we conclude $q\in B$. Therefore $q$ is an upper bound for $A$, which is both rational and smaller than $p$. Given an arbitrary upper bound, we have constructed a smaller upper bound. Surely this means there can be no *least* upper bound. $\Box$
 
-# Examples 2-3
+**More examples**
 * Let $A = \\{x\in\mathbb{Q}\mid x<0\\}$ and $B=\\{x\in\mathbb{Q}\mid x\leq 0\\}$. Then $\sup A = \sup B = 0$, and $0\in B$, but $0\notin A$.
 * Let $A = \\{\frac1n\mid n\in\mathbb{Z}^{+}\\}$. Then $\sup A = 1\in A$ and $\inf A = 0\notin A$.
 
-### The least upper bound property
+**Definition 1.10**: An ordered set $S$ is said to have the **least upper bound property** if every non-empty $E\subset S$ with an upper bound has a supremum.
 
-* An ordered set $S$ is said to have the **least upper bound property** if every non-empty $E\subset S$ with an upper bound has a supremum.
-* The ordered set $\mathbb{Q}$ does not have the least upper bound property. The ordered set $\mathbb{Z}$ does have the least upper bound property.
-**_Theorem 1.11_** If $S$ has the least upper bound property then every non-empty set which is bounded below has an infimum.
+The ordered set $\mathbb{Q}$ does not have the least upper bound property. The ordered set $\mathbb{Z}$ does have the least upper bound property.
+
+**Theorem 1.11** If $S$ has the least upper bound property then every non-empty set which is bounded below has an infimum. One might express this by saying that $S$ also has a *greatest lower bound* property.
 
 # Fields
-* **Definition 1.12**: A **field** is a set, $F$, with two operations called *addition* and *multiplication* which satisfy the field axioms. In the following, $x$, $y$, and $z$ are arbitrary elements of $F$.
-	* (A1) $F$ is closed under $+$. $x+y\in F$
-	* (A2) $+$ is commutative. $x+y=y+x$
-	* (A3) $+$ is associative. $(x+y)+z=x+(y+z)$
-	* (A4) There is an element $0\in F$ such that $0+x=x$ for every $x\in F$.
-	* (A5) For each $x\in F$ there is an element $-x\in F$ such that $x+(-x)=0$.
-	* (M1) $F$ is closed under $\cdot$. $x\cdot y\in F$
-	* (M2) $\cdot$ is commutative. $x\cdot y = y\cdot x$
-	* (M3) $\cdot$ is associative. $(x\cdot y)\cdot z = x\cdot (y\cdot z)$
-	* (M4) There is an element $1\in F$ such that $1\cdot x=x$ for every $x\in F$.
-	* (M5) For each $x\in F$ such that $x\neq 0$, there is an element $1/x=x^{-1}\in F$ such that $x\cdot x^{-1}=1$.
-	* (D) Multiplication distributes over addition. $x\cdot(y+z)=x\cdot y + x\cdot z$
-* In any field, and for any integer $n$, the expressions $x-y$, $x/y$, $x+y+z$, $xyz$, $x^n$, $nx$ have their usual intended meaning.
-* $\mathbb{Q}$ is an example of a field. $\mathbb{Z}$ is not because its elements do not have multiplicative inverses in $\mathbb{Z}$.
+**Definition 1.12**: A **field** is a set, $F$, with two operations called *addition* and *multiplication* which satisfy the field axioms. In the following, $x$, $y$, and $z$ are arbitrary elements of $F$.
+* (A1) $F$ is closed under $+$. $x+y\in F$
+* (A2) $+$ is commutative. $x+y=y+x$
+* (A3) $+$ is associative. $(x+y)+z=x+(y+z)$
+* (A4) There is an element $0\in F$ such that $0+x=x$ for every $x\in F$.
+* (A5) For each $x\in F$ there is an element $-x\in F$ such that $x+(-x)=0$.
+* (M1) $F$ is closed under $\cdot$. $x\cdot y\in F$
+* (M2) $\cdot$ is commutative. $x\cdot y = y\cdot x$
+* (M3) $\cdot$ is associative. $(x\cdot y)\cdot z = x\cdot (y\cdot z)$
+* (M4) There is an element $1\in F$ such that $1\cdot x=x$ for every $x\in F$.
+* (M5) For each $x\in F$ such that $x\neq 0$, there is an element $1/x=x^{-1}\in F$ such that $x\cdot x^{-1}=1$.
+* (D) Multiplication distributes over addition. $x\cdot(y+z)=x\cdot y + x\cdot z$
+
+In any field, and for any integer $n$, the expressions $x-y$, $x/y$, $x+y+z$, $xyz$, $x^n$, $nx$ have their usual intended meaning. $\mathbb{Q}$ is an example of a field. $\mathbb{Z}$ is not because its elements do not have multiplicative inverses in $\mathbb{Z}$.
 
 **Propositions 1.14-1.16**: Let $x,y,z$ be arbitrary elements of the field $F$.
 * If $x+y=x+z$ then $x=z$
@@ -138,12 +137,13 @@ $\mathbb{Q}$ is an example of an ordered field.
 
 # The Extended Real Number System
 **Definition 1.23**: The **extended real number system** consists of the real field $\mathbb{R}$ and two additional symbols, $\infty=+\infty$ and $-\infty$. The original order of $\mathbb{R}$ is preserved and for each $x\in\mathbb{R}$ we define $-\infty<x<\infty$.
+
 In the extended reals, every non-empty set has a least upper bound (possibly $\infty$) and a greatest lower bound (possibly $-\infty$). Every real number in this system is referred to as *finite*. The extended reals *do not* form a field, but we employ the following consistent conventions for each real number $x$:
 * $x+\infty=\infty$
 * $x+(-\infty) = x-\infty = -\infty$
 * $x/\infty=x/-\infty=0$
 * If $x>0$ then $x\cdot\infty=\infty$ and $x\cdot-\infty=-\infty$
-* If $x<0$ then $x\cdot\infty=-\infty$ and $x\cdot-\infty=-\infty$
+* If $x<0$ then $x\cdot\infty=-\infty$ and $x\cdot-\infty=\infty$
 
 Note in particular that there are no consistent definitions for:
 * $0\cdot\pm\infty$
@@ -167,7 +167,7 @@ According to these definitions, $(0,0)$ is an additive identity and $(1,0)$ is a
 
 **Theorem 1.31**: If $z$ and $w$ are complex numbers, then:
 * $\overline{z+w}=\overline{z}+\overline{w}$
-* $\overline{zw}=\overline{z}\overline{w}
+* $\overline{zw}=\overline{z}\overline{w}$
 * $z+\overline{z}=2\Re(z)$
 * $z-\overline{z}=2\Im(z)$
 * $z\overline{z}$ is a positive real number unless $z=0$
