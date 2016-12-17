@@ -13,7 +13,7 @@ description: MC-MATH-301
 * E-mail address : aylvisaker@monmouthcollege.edu 
 * Office / Phone : CSB 348 / 309-457-2184
 * Course webpage : https://aylvisaker.github.io/MC-MATH301-SP17/
-* Meeting times : MTWF 10:00-10:50 AM, R 9:00-10:50 AM
+* Meeting times : MTWF 11:00-11:50 AM
 * Meeting location : CSB 303
 * Textbook : Principles of Mathematical Analysis by Walter Rudin
 
