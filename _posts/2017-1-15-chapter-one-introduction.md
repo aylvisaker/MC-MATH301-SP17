@@ -3,15 +3,23 @@ layout: post
 title: "Chapter 1 Notes"
 categories: [notes]
 tags: [notes]
-description: MC-MATH301-SP17
+description: The Real and Complex Number Systems
 ---
+* [1. Introduction](#s1)
+* [2. Ordered Sets](#s2)
+* [3. Fields](#s3)
+* [4. The Real Field](#s4)
+* [5. The Extended Real Number System](#s5)
+* [6. The Complex Field](#s6)
+* [7. Euclidean Spaces](#s7)
 
-# Introduction
+<div id='s1'/>
+# 1. Introduction
 This class assumes basic familiarity with **arithmetic**, **algebra**, and **sets** (particularly the fundamental theorems of the former).
 
 ### Important sets
 
-* The **additive identity** is \\(0\\). The **multiplicative identity** is \\(1\\). The set of **natural numbers** is \\(\\mathbb{N}\\), the smallest set that contains \\(\\{0,1\\}\\) and is closed under addition, multiplication, and exponentiation.
+* The **additive identity** is \\(0\\). The **multiplicative identity** is \\(1\\). The set of **natural numbers** is \\(\\mathbb{N}\\), the smallest set that contains \\(\\{0,1\\}\\) and is closed under addition, multiplication, and exponentiation (assuming, by convention, that \\( 0^0=1 \\)).
 \\[ \mathbb{N} = \\{0,1,2,\dots\\} \\]
 
 * The **additive inverse** of a number, \\(n\\), is the number \\(-n\\). The set of  **integers** is  \\(\\mathbb{Z}\\), the smallest set that contains \\(\\mathbb{N}\\) and is closed under additive inverses, addition, subtraction, and multiplication. \\(\\mathbb{Z}\\) is not closed under exponentiation.
@@ -46,7 +54,8 @@ These cannot be the same because the former factorization has an even exponent o
   * \\(A\\subset B\\) and \\(B\\supset A\\) both convey that each element of \\(A\\) is also an element of \\(B\\). We say that \\(A\\) is **contained** in  (i.e. a **subset** of) \\(B\\).
   * \\(A=B\\) means that \\(A\\subset B\\) and \\(B\\subset A\\).
 
-# Ordered Sets
+<div id='s2'/>
+# 2. Ordered Sets
 **Definition 1.5**: An **order** on a set $S$ is a relation (which we denote by $<$) with the following two properties:
 * If $x,y\in S$ then one and only one of the following holds:
 	* $x<y$
@@ -81,7 +90,8 @@ The ordered set $\mathbb{Q}$ does not have the least upper bound property. The o
 
 **Theorem 1.11** If $S$ has the least upper bound property then every non-empty set which is bounded below has an infimum. One might express this by saying that $S$ also has a *greatest lower bound* property.
 
-# Fields
+<div id='s3'/>
+# 3. Fields
 **Definition 1.12**: A **field** is a set, $F$, with two operations called *addition* and *multiplication* which satisfy the field axioms. In the following, $x$, $y$, and $z$ are arbitrary elements of $F$.
 * (A1) $F$ is closed under $+$. $x+y\in F$
 * (A2) $+$ is commutative. $x+y=y+x$
@@ -124,8 +134,15 @@ $\mathbb{Q}$ is an example of an ordered field.
 * If $x\neq 0$ then $x^2>0$
 * If $0<x<y$ then $0<1/y<1/x$
 
-# The Real Field
+<div id='s4'/>
+# 4. The Real Field
 **Theorem 1.19**: There exists an ordered field $\mathbb{R}$ with the least upper bound property. Moreover, $\mathbb{Q}$ is (isomorphic to) a subfield of $\mathbb{R}$. The members of this field are called the **real numbers**.
+
+The construction of the real numbers is found in the appendix of chapter 1. The basic idea is that each real number is defined by a set of rational numbers. These sets are called **cuts** and any set, $S\subset\mathbb{Q}$ with the following properties is defined to be a cut.
+
+* $S\neq\emptyset$ and $S\neq\mathbb{Q}$.
+* If $p\in S$ and $q\in\mathbb{Q}$ with $q<p$, then $q\in S$.
+* If $p\in S$, then $p<r$ for some $r\in S$.
 
 **Theorem 1.20**: Let $x$ and $y$ be arbitrary elements of $\mathbb{R}$.
 * *The Archimedean Property:* If $x>0$ then there is some $n\in\mathbb{Z}^{+}$ such that $nx>y$.
@@ -133,9 +150,12 @@ $\mathbb{Q}$ is an example of an ordered field.
 	
 **Proposition 1.21**: Let $x\in\mathbb{R}$, $x>0$, and $n>0$. Then there is exactly one $y\in\mathbb{R}$ such that $y^n=x$. We usually write $y=\sqrt[n]{x}$ or $y=x^{\frac1n}$.
 
-**We shall never use decimals, so we do not enter into a detailed discussion of them**
+The above proposition simply asserts that $n^\text{th}$ roots of positive numbers exist in the real number system. We saw in the introductory section of this chapter that isn't true of the rational number system.
 
-# The Extended Real Number System
+**"We shall never use decimals, so we do not enter into a detailed discussion of them."**
+
+<div id='s5'/>
+# 5. The Extended Real Number System
 **Definition 1.23**: The **extended real number system** consists of the real field $\mathbb{R}$ and two additional symbols, $\infty=+\infty$ and $-\infty$. The original order of $\mathbb{R}$ is preserved and for each $x\in\mathbb{R}$ we define $-\infty<x<\infty$.
 
 In the extended reals, every non-empty set has a least upper bound (possibly $\infty$) and a greatest lower bound (possibly $-\infty$). Every real number in this system is referred to as *finite*. The extended reals *do not* form a field, but we employ the following consistent conventions for each real number $x$:
@@ -145,12 +165,13 @@ In the extended reals, every non-empty set has a least upper bound (possibly $\i
 * If $x>0$ then $x\cdot\infty=\infty$ and $x\cdot-\infty=-\infty$
 * If $x<0$ then $x\cdot\infty=-\infty$ and $x\cdot-\infty=\infty$
 
-Note in particular that there are no consistent definitions for:
+Note in particular that we have no consistent definitions for:
 * $0\cdot\pm\infty$
 * $\infty-\infty$
 * $\pm\infty/\pm\infty$
 
-# The Complex Field
+<div id='s6'/>
+# 6. The Complex Field
 **Definition 1.24**: A **complex number** is an ordered pair $(a,b)$ of real numbers.For complex numbers $x=(a,b)$ and $y=(c,d)$ we write $x=y$ precisely when $a=c$ and $b=d$. Moreover, we define:
 * $x+y=(a+c,b+d)$
 * $x\cdot y=(ac-ba,ad+bc)$
@@ -189,3 +210,36 @@ According to these definitions, $(0,0)$ is an additive identity and $(1,0)$ is a
 **Theorem 1.35 - The Schwarz Inequality**: Let $a_1,\dots,a_n$ and $b_1,\dots,b_n$ be complex numbers. Then
 
 $$ \left\vert \sum_{i=1}^n a_i\overline{b_i} \right\vert^2 \leq \left( \sum_{i=1}^n\left\vert a_i \right\vert^2 \right) + \left( \sum_{i=1}^n\left\vert b_i \right\vert^2 \right)$$
+
+<div id='s7'/>
+# 7. Euclidean Spaces
+
+**Definition 1.36**: Where $k$ is a positive integer, $\mathbb{R}^k$ denotes the set of all ordered $k$-tuples, $\vec{x}=(x_1,x_2,\dots,x_k)$, where $x_1,\dots,x_k$ are real numbers, called the **coordinates** of $\vec{x}$. The elements of $\mathbb{R}^k$ are called **points** or **vectors** and will be denoted by boldface letters.
+
+The operations on vectors are addition and scalar multiplication. When $x,y\in\mathbb{R}^k$ and $\alpha\in\mathbb{R}$:
+
+$$ \vec x + \vec y = (x_1 + y_1, x_2 + y_2,\dots, x_k + y_k),$$
+
+and
+
+$$ \alpha \vec{x} = (\alpha x_1,\alpha x_2, \dots, \alpha x_k).$$
+
+Thus $\vec{x} + \vec{y}$ and $\alpha \vec{x}$ are both elements of $\mathbb{R}^k$. These operations satisfy the commutative, distributive, and associative laws.
+
+The set $\mathbb{R}^k$ is referred to a **vector space over the real field**. The **zero vector** is $\vec{0} = (0,\dots,0)$ and serves as an identity for vector addition.
+
+Given $\vec{x},\vec{y}\in\mathbb{R}^k$, we define the **inner product** of $\vec{x}$ and $\vec{y}$ to be:
+
+$$ \vec{x}\cdot\vec{y} = x_1 y_1 + \dots + x_k y_k = \sum_{i=1}^k x_i y_i.$$
+
+The **norm** of a vector $\vec{x}$ is defined to be:
+
+$$ \left\vert \vec{x} \right\vert = \left(\vec{x} \cdot \vec{x}\right)^{1/2} = \left(\sum_{i=1}^k x_i^2\right)^{1/2}$$
+
+**Theorem 1.37** For $\vec{x}, \vec{y}, \vec{z} \in \mathbb{R}^k$ and $\alpha\in\mathbb{R}$:
+* $\vert \vec{x} \vert \geq 0$,
+* $\vert \vec{x} \vert = 0$ if and only if $\vec{x} = \vec{0}$,
+* $\vert \alpha\vec{x} \vert = \vert \alpha \vert \vert \vec{x} \vert$,
+* $\vert \vec{x}\cdot\vec{y} \vert \leq \vert \vec{x} \vert \vert \vec{y} \vert$,
+* $\vert \vec{x} + \vec{y} \vert \leq \vert \vec{x} \vert + \vert \vec{y} \vert$,
+* $\vert \vec{x} - \vec{z} \vert \leq \vert \vec{x} - \vec{y}\vert + \vert \vec{y} - \vec{z}\vert
