@@ -12,11 +12,11 @@ discussions = [item[1] for item in source]
 schedule_markup.write('---\nlayout: post\ntitle: "Course Schedule"\n')
 schedule_markup.write('categories: [syllabus]\ntags: [syllabus]\n')
 schedule_markup.write('description: MC-MATH-301\n---\n\n')
-schedule_markup.write('|Week |Monday|Tuesday|Wednesday|Friday|\n')
-schedule_markup.write('|:---:|:---: |:---:  |:---:    |:---: |\n')
+schedule_markup.write('|Week|Start Date|Monday|Tuesday|Wednesday|Friday|\n')
+schedule_markup.write('|:---:|:---:|:---: |:---:  |:---:    |:---: |\n')
 iterator = 0
 for week in range(len(academic_calendar)):
-    row = '|' + str(week + 1) + '|'
+    row = '|' + str(week + 1) + '|' + str(start + datetime.timedelta(days = 7 * week))[-5:] + '|'
     for day in [0,1,2,4]:
         current_day = start + datetime.timedelta(days = 7 * week + day)
         if not academic_calendar[week][day]:

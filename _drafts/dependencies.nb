@@ -1,0 +1,272 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     11417,        264]
+NotebookOptionsPosition[     10897,        240]
+NotebookOutlinePosition[     11241,        255]
+CellTagsIndexPosition[     11198,        252]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Dependencies", "Title",
+ CellChangeTimes->{{3.6935197276900005`*^9, 3.693519729737868*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Inititialization", "Chapter",
+ CellChangeTimes->{{3.693528642680887*^9, 3.693528649672635*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SetDirectory", "@", 
+   RowBox[{"ParentDirectory", "@", 
+    RowBox[{"NotebookDirectory", "[", "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"publish", "[", 
+   RowBox[{"picture_", ",", "name_"}], "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", "prefix", "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"prefix", "=", "\"\<_assets\\\\images\\\\\>\""}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Export", "[", 
+      RowBox[{
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"prefix", ",", "name", ",", "\"\<.png\>\""}], "]"}], ",", 
+       RowBox[{"Show", "@", "picture"}]}], "]"}], ";", "\[IndentingNewLine]", 
+     RowBox[{"Export", "[", 
+      RowBox[{
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"prefix", ",", "name", ",", "\"\<.hd.png\>\""}], "]"}], ",", 
+       RowBox[{"Magnify", "[", 
+        RowBox[{"picture", ",", "2"}], "]"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Show", "@", "picture"}]}]}], "\[IndentingNewLine]", 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"colors", "=", 
+   RowBox[{"ColorData", "[", 
+    RowBox[{"97", ",", "\"\<ColorList\>\""}], "]"}]}], ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.6908403682742834`*^9, 3.690840478146974*^9}, {
+  3.690840541282446*^9, 3.690840644938988*^9}, {3.690840681169767*^9, 
+  3.690840683470301*^9}, {3.690841231661964*^9, 3.6908412437111564`*^9}, {
+  3.6908415032992687`*^9, 3.690841523054243*^9}, {3.6908444300229626`*^9, 
+  3.690844439590088*^9}, {3.6908444696721773`*^9, 3.690844482021237*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Chapter 2", "Chapter",
+ CellChangeTimes->{{3.6935197213542695`*^9, 3.693519723185997*^9}}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"numbers", "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"StringJoin", "[", 
+      RowBox[{"\"\<2.\>\"", ",", "#"}], "]"}], "&"}], "/@", 
+    RowBox[{"ToString", "/@", 
+     RowBox[{"Range", "[", "42", "]"}]}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"types", "=", 
+   RowBox[{"Join", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<D\>\"", ",", "\"\<D\>\"", ",", "\"\<D\>\"", ",", "\"\<D\>\"", ",", 
+       "\"\<E\>\"", ",", "\"\<R\>\"", ",", "\"\<D\>\"", ",", "\"\<T\>\"", 
+       ",", "\"\<D\>\"", ",", "\"\<E\>\""}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<R\>\"", ",", "\"\<T\>\"", ",", "\"\<T\>\"", ",", "\"\<T\>\"", ",", 
+       "\"\<D\>\"", ",", "\"\<E\>\"", ",", "\"\<D\>\"", ",", "\"\<D\>\"", 
+       ",", "\"\<T\>\"", ",", "\"\<T\>\""}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<E\>\"", ",", "\"\<T\>\"", ",", "\"\<T\>\"", ",", "\"\<T\>\"", ",", 
+       "\"\<E\>\"", ",", "\"\<D\>\"", ",", "\"\<T\>\"", ",", "\"\<T\>\"", 
+       ",", "\"\<R\>\"", ",", "\"\<T\>\""}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<D\>\"", ",", "\"\<D\>\"", ",", "\"\<T\>\"", ",", "\"\<T\>\"", ",", 
+       "\"\<T\>\"", ",", "\"\<T\>\"", ",", "\"\<T\>\"", ",", "\"\<T\>\"", 
+       ",", "\"\<T\>\"", ",", "\"\<T\>\""}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\"\<T\>\"", ",", "\"\<T\>\""}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"color", "[", "type_", "]"}], ":=", 
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{"type", "\[Equal]", "\"\<D\>\""}], ",", "Blue", ",", 
+    RowBox[{"If", "[", 
+     RowBox[{
+      RowBox[{"type", "\[Equal]", "\"\<T\>\""}], ",", "Red", ",", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{"type", "\[Equal]", "\"\<E\>\""}], ",", "Green", ",", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"type", "\[Equal]", "\"\<R\>\""}], ",", "Green", ",", 
+          "Black"}], "]"}]}], "]"}]}], "]"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"vertices", "=", 
+   RowBox[{"Join", "[", 
+    RowBox[{
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"Style", "[", 
+        RowBox[{
+         RowBox[{"numbers", "[", 
+          RowBox[{"[", "i", "]"}], "]"}], ",", 
+         RowBox[{"color", "[", 
+          RowBox[{"types", "[", 
+           RowBox[{"[", "i", "]"}], "]"}], "]"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", "42"}], "}"}]}], "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<Definition\>\"", ",", "Blue"}], "]"}], ",", 
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<Theorem\>\"", ",", "Red"}], "]"}], ",", 
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<Remark / Example\>\"", ",", "Green"}], "]"}]}], "}"}]}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"picture", "=", 
+   RowBox[{"Graph", "[", 
+    RowBox[{"vertices", ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"\"\<2.42\>\"", "\[DirectedEdge]", "\"\<2.40\>\""}], ",", 
+       RowBox[{"\"\<2.42\>\"", "\[DirectedEdge]", "\"\<2.37\>\""}], ",", 
+       RowBox[{"\"\<2.41\>\"", "\[DirectedEdge]", "\"\<2.40\>\""}], ",", 
+       RowBox[{"\"\<2.41\>\"", "\[DirectedEdge]", "\"\<2.37\>\""}], ",", 
+       RowBox[{"\"\<2.41\>\"", "\[DirectedEdge]", "\"\<2.35\>\""}], ",", 
+       RowBox[{"\"\<2.41\>\"", "\[DirectedEdge]", "\"\<2.20\>\""}], ",", 
+       RowBox[{"\"\<2.40\>\"", "\[DirectedEdge]", "\"\<2.39\>\""}], ",", 
+       RowBox[{"\"\<2.40\>\"", "\[DirectedEdge]", "\"\<2.32\>\""}], ",", 
+       RowBox[{"\"\<2.39\>\"", "\[DirectedEdge]", "\"\<2.38\>\""}], ",", 
+       RowBox[{"\"\<2.39\>\"", "\[DirectedEdge]", "\"\<2.17\>\""}], ",", 
+       RowBox[{"\"\<2.38\>\"", "\[DirectedEdge]", "\"\<2.9\>\""}], ",", 
+       RowBox[{"\"\<2.37\>\"", "\[DirectedEdge]", "\"\<2.32\>\""}], ",", 
+       RowBox[{"\"\<2.36\>\"", "\[DirectedEdge]", "\"\<2.32\>\""}], ",", 
+       RowBox[{"\"\<2.35\>\"", "\[DirectedEdge]", "\"\<2.32\>\""}], ",", 
+       RowBox[{"\"\<2.35\>\"", "\[DirectedEdge]", "\"\<2.18\>\""}], ",", 
+       RowBox[{"\"\<2.34\>\"", "\[DirectedEdge]", "\"\<2.32\>\""}], ",", 
+       RowBox[{"\"\<2.34\>\"", "\[DirectedEdge]", "\"\<2.18\>\""}], ",", 
+       RowBox[{"\"\<2.33\>\"", "\[DirectedEdge]", "\"\<2.32\>\""}], ",", 
+       RowBox[{"\"\<2.33\>\"", "\[DirectedEdge]", "\"\<2.30\>\""}], ",", 
+       RowBox[{"\"\<2.32\>\"", "\[DirectedEdge]", "\"\<2.31\>\""}], ",", 
+       RowBox[{"\"\<2.31\>\"", "\[DirectedEdge]", "\"\<2.18\>\""}], ",", 
+       RowBox[{"\"\<2.31\>\"", "\[DirectedEdge]", "\"\<2.9\>\""}], ",", 
+       RowBox[{"\"\<2.30\>\"", "\[DirectedEdge]", "\"\<2.24\>\""}], ",", 
+       RowBox[{"\"\<2.30\>\"", "\[DirectedEdge]", "\"\<2.19\>\""}], ",", 
+       RowBox[{"\"\<2.29\>\"", "\[DirectedEdge]", "\"\<2.21\>\""}], ",", 
+       RowBox[{"\"\<2.29\>\"", "\[DirectedEdge]", "\"\<2.16\>\""}], ",", 
+       RowBox[{"\"\<2.28\>\"", "\[DirectedEdge]", "\"\<2.26\>\""}], ",", 
+       RowBox[{"\"\<2.27\>\"", "\[DirectedEdge]", "\"\<2.26\>\""}], ",", 
+       RowBox[{"\"\<2.26\>\"", "\[DirectedEdge]", "\"\<2.18\>\""}], ",", 
+       RowBox[{"\"\<2.25\>\"", "\[DirectedEdge]", "\"\<2.24\>\""}], ",", 
+       RowBox[{"\"\<2.24\>\"", "\[DirectedEdge]", "\"\<2.23\>\""}], ",", 
+       RowBox[{"\"\<2.24\>\"", "\[DirectedEdge]", "\"\<2.22\>\""}], ",", 
+       RowBox[{"\"\<2.23\>\"", "\[DirectedEdge]", "\"\<2.18\>\""}], ",", 
+       RowBox[{"\"\<2.23\>\"", "\[DirectedEdge]", "\"\<2.9\>\""}], ",", 
+       RowBox[{"\"\<2.22\>\"", "\[DirectedEdge]", "\"\<2.9\>\""}], ",", 
+       RowBox[{"\"\<2.21\>\"", "\[DirectedEdge]", "\"\<2.18\>\""}], ",", 
+       RowBox[{"\"\<2.20\>\"", "\[DirectedEdge]", "\"\<2.18\>\""}], ",", 
+       RowBox[{"\"\<2.20\>\"", "\[DirectedEdge]", "\"\<2.15\>\""}], ",", 
+       RowBox[{"\"\<2.20\>\"", "\[DirectedEdge]", "\"\<2.4\>\""}], ",", 
+       RowBox[{"\"\<2.19\>\"", "\[DirectedEdge]", "\"\<2.18\>\""}], ",", 
+       RowBox[{"\"\<2.19\>\"", "\[DirectedEdge]", "\"\<2.15\>\""}], ",", 
+       RowBox[{"\"\<2.18\>\"", "\[DirectedEdge]", "\"\<2.15\>\""}], ",", 
+       RowBox[{"\"\<2.18\>\"", "\[DirectedEdge]", "\"\<2.4\>\""}], ",", 
+       RowBox[{"\"\<2.16\>\"", "\[DirectedEdge]", "\"\<2.15\>\""}], ",", 
+       RowBox[{"\"\<2.14\>\"", "\[DirectedEdge]", "\"\<2.4\>\""}], ",", 
+       RowBox[{"\"\<2.13\>\"", "\[DirectedEdge]", "\"\<2.12\>\""}], ",", 
+       RowBox[{"\"\<2.12\>\"", "\[DirectedEdge]", "\"\<2.8\>\""}], ",", 
+       RowBox[{"\"\<2.11\>\"", "\[DirectedEdge]", "\"\<2.9\>\""}], ",", 
+       RowBox[{"\"\<2.10\>\"", "\[DirectedEdge]", "\"\<2.9\>\""}], ",", 
+       RowBox[{"\"\<2.8\>\"", "\[DirectedEdge]", "\"\<2.7\>\""}], ",", 
+       RowBox[{"\"\<2.7\>\"", "\[DirectedEdge]", "\"\<2.4\>\""}], ",", 
+       RowBox[{"\"\<2.6\>\"", "\[DirectedEdge]", "\"\<2.4\>\""}], ",", 
+       RowBox[{"\"\<2.5\>\"", "\[DirectedEdge]", "\"\<2.4\>\""}], ",", 
+       RowBox[{"\"\<2.4\>\"", "\[DirectedEdge]", "\"\<2.3\>\""}], ",", 
+       RowBox[{"\"\<2.3\>\"", "\[DirectedEdge]", "\"\<2.2\>\""}], ",", 
+       RowBox[{"\"\<2.2\>\"", "\[DirectedEdge]", "\"\<2.1\>\""}]}], "}"}], 
+     ",", 
+     RowBox[{"VertexLabels", "\[Rule]", "\"\<Name\>\""}], ",", 
+     RowBox[{"EdgeShapeFunction", "\[Rule]", 
+      RowBox[{"GraphElementData", "[", 
+       RowBox[{"{", 
+        RowBox[{"\"\<Arrow\>\"", ",", 
+         RowBox[{"\"\<ArrowSize\>\"", "\[Rule]", ".01"}]}], "}"}], "]"}]}], 
+     ",", 
+     RowBox[{"VertexLabelStyle", "\[Rule]", "Bold"}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "500"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"publish", "[", 
+  RowBox[{"picture", ",", "\"\<chapter2\>\""}], "]"}]}], "Input",
+ CellChangeTimes->{{3.693518648861288*^9, 3.6935186554695816`*^9}, {
+   3.6935186867710094`*^9, 3.6935191874950333`*^9}, {3.6935192291352544`*^9, 
+   3.693519233561206*^9}, {3.6935192869454355`*^9, 3.693519364694559*^9}, 
+   3.6935197402660623`*^9, {3.693519793516765*^9, 3.693519812828905*^9}, {
+   3.693519904126505*^9, 3.693519921147897*^9}, {3.6935200132989025`*^9, 
+   3.693520024218689*^9}, {3.6935200753308644`*^9, 3.6935200803222275`*^9}, {
+   3.6935286783400345`*^9, 3.6935286821675873`*^9}, {3.6935287259019003`*^9, 
+   3.6935287589865227`*^9}}]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1186, 884},
+WindowMargins->{{Automatic, 145}, {23, Automatic}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (July 28, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 97, 1, 90, "Title"],
+Cell[CellGroupData[{
+Cell[702, 27, 101, 1, 64, "Chapter"],
+Cell[806, 30, 1619, 37, 180, "Input",
+ InitializationCell->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2462, 72, 96, 1, 64, "Chapter"],
+Cell[2561, 75, 8308, 161, 354, "Input"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
