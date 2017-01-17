@@ -34,14 +34,17 @@ A detailed schedule can be found on the course webpage. This will be kept up to 
 * Chapter 11 : The Lebesgue Theoery
 
 # Grading Scale
-. Letter grades will follow the standard 90/80/70/60 scale, with 90 sufficient for some kind of A, 80 sufficient for some kind of B, etc. Plus and minus grades will be assigned at the instructor's discretion, typically the lower third of the range (0-3) earning a minus and the upper third of the range (7 and up) earning a plus.
+Your overall grade for the course will be computed as the average of (1) your average exam score, and (2) your average homework score. Letter grades will follow the standard 90/80/70/60 scale, with 90 sufficient for some kind of A, 80 sufficient for some kind of B, etc. Plus and minus grades will be assigned at the instructor's discretion, typically the lower third of the range (0-3) earning a minus and the upper third of the range (7 and up) earning a plus.
+
+# Homework
+Assigned homework will be collected on the first day of each week. Each problem should be done in pencil on a new side of a sheet of paper (you can use both sides if you wish). Write neatly and justify all steps in your proofs.
 
 # Exams
 Scheduled exam dates are available on the course calendar. These will likely change as we burn flex days, but will otherwise proceed on schedule. I will make an effort to remind you when an exam is coming up, but it is ultimately your responsibility to pay attention to the calendar.
 
 Exams must be written in pencil. Any exam written in pen will have 10% deducted from the final score. Listening to music and the use of electronic devices (other than calculators) is strictly forbidden. If you need to use the restroom during an exam, leave all of your things behind (especially your phone) and quietly excuse yourself (eye contact with me is good enough, no need to make a production of it).
 
-The final exam will be cumulative and takes place on Tuesday, May 9 at 3:00 PM. The exam will take place in CSB 323. This exam cannot be rescheduled except under extreme circumstances.
+The final exam will be cumulative and takes place either on Friday, May 5 at 3:00 PM or on Monday, May 8 at 11:30 AM (depending on what the registrar says - I'll update this document when I have more information). The exam will take place in CSB 303. This exam cannot be rescheduled except under extreme circumstances.
 
 # Workload Expectations
 In addition to attending class each day, students should plan to spend approximately 10 hours per week working outside of class. This time should be spent reading, completing homework, studying, and making use of available resources. The figure is only an estimated average, some students may need to spend much more than 10 hours practicing in order to learn the material effectively.
