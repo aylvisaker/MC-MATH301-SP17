@@ -76,7 +76,7 @@ then we say $\alpha$ is the **least upper bound** of $E$, or the **supremum** of
 
 **Example** Let $A = \\{x\in\mathbb{Q}^{+}\mid x^2<2\\}$ and $B = \\{x\in\mathbb{Q}^{+}\mid x^2>2\\}$. Then $A$ has no least upper bound and $B$ has no greatest lower bound. We prove the former. Let $p$ be an upper bound for $A$, and let $q = p-\frac{p^2-2}{p+2}$. It is straightforward to show that $q\in\mathbb{Q}$. Since $p\in B$ (think about that), it follows that $p^2-2>0$, so $q<p$. Now consider
 
-$$q^2-2=\left(\frac{2p+2}{p+2}\right)^2-2=\frac{(4p^2+8p+4)}{(p+2)^2}-\frac{2p^2+8p+8}{(p+2)^2}=\frac{2(p^2-2}{(p+2)^2}$$
+$$q^2-2=\left(\frac{2p+2}{p+2}\right)^2-2=\frac{(4p^2+8p+4)}{(p+2)^2}-\frac{2p^2+8p+8}{(p+2)^2}=\frac{2(p^2-2)}{(p+2)^2}$$
 
 Since $q^2-2>0$, we conclude $q\in B$. Therefore $q$ is an upper bound for $A$, which is both rational and smaller than $p$. Given an arbitrary upper bound, we have constructed a smaller upper bound. Surely this means there can be no *least* upper bound. $\Box$
 
