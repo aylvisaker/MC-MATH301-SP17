@@ -203,5 +203,7 @@ The latter two are equivalent in any metric space. However, it is not generally 
 <div id='s4'/>
 # 4. Perfect Sets
 
+Testing 1, 2, 3. This is only a test.
+
 <div id='s5'/>
 # 5. Connected Sets
