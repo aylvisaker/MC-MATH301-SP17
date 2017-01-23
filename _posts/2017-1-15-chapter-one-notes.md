@@ -184,13 +184,13 @@ According to these definitions, $(0,0)$ is an additive identity and $(1,0)$ is a
 
 **Theorems 1.27-1.29**: The above definitions are consistent with familiar notations for complex numbers: $a+bi$. Where $i=(0,1)$, $a+bi$ is identified with $(a,b)$.
 
-**Definition 1.30**: If $z=(a,b)=a+bi$, then $\overline{z}=(a,-b)=a-bi$, $\Re(z)=a$, and $\Im(z)=b$.
+**Definition 1.30**: If $z=(a,b)=a+bi$, then $\overline{z}=(a,-b)=a-bi$, $\mathbf{Re}(z)=a$, and $\mathbf{Im}(z)=b$.
 
 **Theorem 1.31**: If $z$ and $w$ are complex numbers, then:
 * $\overline{z+w}=\overline{z}+\overline{w}$
 * $\overline{zw}=\overline{z}\overline{w}$
-* $z+\overline{z}=2\Re(z)$
-* $z-\overline{z}=2\Im(z)$
+* $z+\overline{z}=2\mathbf{Re}(z)$
+* $z-\overline{z}=2\mathbf{Im}(z)$
 * $z\overline{z}$ is a positive real number unless $z=0$
 * If $z\in\mathbb{R}$ then $\overline{z}=z$
 
@@ -202,7 +202,7 @@ According to these definitions, $(0,0)$ is an additive identity and $(1,0)$ is a
 * if $z\neq0$ then $\vert z\vert >0$
 * $\vert\overline{z}\vert=\vert z\vert$
 * $\vert zw\vert = \vert z\vert\cdot \vert w\vert$
-* $\vert\Re(z)\vert \leq \vert z\vert$
+* $\vert\mathbf{Re}(z)\vert \leq \vert z\vert$
 * $\vert z+w\vert\leq \vert z\vert + \vert w\vert$
 
 **Sigma notation**: When $x_1,\dots,x_n$ are complex numbers, in place of $x_1+x_2+\dots+x_n$ we write $\sum_{i=1}^n x_i$.
