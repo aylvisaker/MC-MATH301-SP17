@@ -48,9 +48,9 @@ These cannot be the same because the former factorization has an even exponent o
 
 * \\(x\\in S\\) means that \\(x\\) is an **element** (i.e. **member**) of \\(S\\) and \\(x\\notin S\\) means that \\(x\\) is *not* an element of \\(S\\).
 * \\(\\emptyset = \\{\\}\\) is called the **empty set** and has no elements. Sets which have at least one element are called **non-empty**.
-* If \\(A\\) and \\(B\\) are sets, then 
+* If \\(A\\) and \\(B\\) are sets, then
   * \\(A\\cap B = \\{x\\mid x\\in A\\text{ and } x\\in B\\}\\) is the **intersection** of \\(A\\) and \\(B\\).
-  * \\(A\\cup B = \\{x\\mid x\\in A\\text{ or }  x\\in B\\}\\) is the **union** of \\(A\\) and \\(B\\). 
+  * \\(A\\cup B = \\{x\\mid x\\in A\\text{ or }  x\\in B\\}\\) is the **union** of \\(A\\) and \\(B\\).
   * \\(A\\subset B\\) and \\(B\\supset A\\) both convey that each element of \\(A\\) is also an element of \\(B\\). We say that \\(A\\) is **contained** in  (i.e. a **subset** of) \\(B\\).
   * \\(A=B\\) means that \\(A\\subset B\\) and \\(B\\subset A\\).
 
@@ -108,7 +108,7 @@ The ordered set $\mathbb{Q}$ does not have the least upper bound property. The o
 In any field, and for any integer $n$, the expressions $x-y$, $x/y$, $x+y+z$, $xyz$, $x^n$, $nx$ have their usual intended meaning. $\mathbb{Q}$ is an example of a field. $\mathbb{Z}$ is not because its elements do not have multiplicative inverses in $\mathbb{Z}$.
 
 **Propositions 1.14-1.16**: Let $x,y,z$ be arbitrary elements of the field $F$.
-* If $x+y=x+z$ then $x=z$
+* If $x+y=x+z$ then $y=z$
 * If $x+y=x$ then $y=0$
 * If $x+y=0$ then $y=-x$
 * $-(-x)=x$
@@ -147,7 +147,7 @@ The construction of the real numbers is found in the appendix of chapter 1. The 
 **Theorem 1.20**: Let $x$ and $y$ be arbitrary elements of $\mathbb{R}$.
 * *The Archimedean Property:* If $x>0$ then there is some $n\in\mathbb{Z}^{+}$ such that $nx>y$.
 * *Density of the Rationals:* If $x<y$ then there is some $p\in\mathbb{Q}$ such that $x<p<y$.
-	
+
 **Proposition 1.21**: Let $x\in\mathbb{R}$, $x>0$, and $n>0$. Then there is exactly one $y\in\mathbb{R}$ such that $y^n=x$. We usually write $y=\sqrt[n]{x}$ or $y=x^{\frac1n}$.
 
 The above proposition simply asserts that $n^\text{th}$ roots of positive numbers exist in the real number system. We saw in the introductory section of this chapter that isn't true of the rational number system.
@@ -193,7 +193,7 @@ According to these definitions, $(0,0)$ is an additive identity and $(1,0)$ is a
 * $z-\overline{z}=2\Im(z)$
 * $z\overline{z}$ is a positive real number unless $z=0$
 * If $z\in\mathbb{R}$ then $\overline{z}=z$
-	
+
 **Definition 1.32**: If $z$ is any complex number (possibly real) then $\vert z\vert = \sqrt{z\overline{z}}$.
 
 **Theorem 1.33**: If $z$ and $w$ are complex numbers, then:
