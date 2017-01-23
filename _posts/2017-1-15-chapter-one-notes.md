@@ -188,7 +188,7 @@ According to these definitions, $(0,0)$ is an additive identity and $(1,0)$ is a
 
 **Theorem 1.31**: If $z$ and $w$ are complex numbers, then:
 * $\overline{z+w}=\overline{z}+\overline{w}$
-* $\overline{zw}=\overline{z}\overline{w}$
+* $\overline{z\cdot w}=\overline{z}\cdot\overline{w}$
 * $z+\overline{z}=2\mathbf{Re}(z)$
 * $z-\overline{z}=2\mathbf{Im}(z)$
 * $z\overline{z}$ is a positive real number unless $z=0$
