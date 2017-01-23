@@ -242,4 +242,4 @@ $$ \left\vert \vec{x} \right\vert = \left(\vec{x} \cdot \vec{x}\right)^{1/2} = \
 * $\vert \alpha\vec{x} \vert = \vert \alpha \vert \vert \vec{x} \vert$,
 * $\vert \vec{x}\cdot\vec{y} \vert \leq \vert \vec{x} \vert \vert \vec{y} \vert$,
 * $\vert \vec{x} + \vec{y} \vert \leq \vert \vec{x} \vert + \vert \vec{y} \vert$,
-* $\vert \vec{x} - \vec{z} \vert \leq \vert \vec{x} - \vec{y}\vert + \vert \vec{y} - \vec{z}\vert
+* $\vert \vec{x} - \vec{z} \vert \leq \vert \vec{x} - \vec{y}\vert + \vert \vec{y} - \vec{z}\vert$
