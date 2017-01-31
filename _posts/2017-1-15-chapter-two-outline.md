@@ -99,7 +99,7 @@ If $\vec{x}\in\mathbb{R}^k$ and $r>0$ then the **open (or closed) ball**, $B$ ce
 
 The set $E\subset\mathbb{R}^k$ is called **convex** if 
 
-$$\lambda\vec{x} + (1-\lambda)\vec{y} \in E$
+$$\lambda\vec{x} + (1-\lambda)\vec{y} \in E$$
 
 whenever $\vec{x},\vec{y}\in E$ and $0<\lambda<1$.
 
