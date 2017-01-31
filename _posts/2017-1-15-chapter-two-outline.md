@@ -95,7 +95,7 @@ Segments are still valid subsets of $\mathbb{R}$ when $a=-\infty$ or $b=+\infty$
 
 If, for each $i=1,\dots,k$, we have $a_i<b_i$, then the set of all points $\vec{x}\in\mathbb{R}^k$ whose coordinates satisfy $a_i<x_i<b_i$ is called a $k$-cell. (Thus a $1$-cell is an interval, a $2$-cell is a rectangle, and a $3$-cell is a box.)
 
-If $\vec{x}\in\mathbb{R}^k$ and $r>0$ then the **open (or closed) ball**, $B$ centered at $\vec{x}$ with radius $r$ is the set of all $\vec{y}\in\mathbb{R}^k$ such that $|\vec{y}-\vec{x}|<r$ (or $|\vec{y}-\vec{x}|\leq r$).
+If $\vec{x}\in\mathbb{R}^k$ and $r>0$ then the **open (or closed) ball**, $B$ centered at $\vec{x}$ with radius $r$ is the set of all $\vec{y}\in\mathbb{R}^k$ such that $|\vec{y}-\vec{x}|<r$ (or $\vert\vec{y}-\vec{x}\vert\leq r$).
 
 The set $E\subset\mathbb{R}^k$ is called **convex** if 
 
