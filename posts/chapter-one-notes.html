@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Math 301 - Advanced Calculus | Chapter 1 Notes</title>
+  <meta name="description" content="The Real and Complex Number Systems">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Chapter 1 Notes">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://aylvisaker.github.io/MC-MATH301-SP17//MC-MATH301-SP17/posts/chapter-one-notes">
+  <meta property="og:description" content="The Real and Complex Number Systems">
+  <meta property="og:site_name" content="Math 301 - Advanced Calculus">
+  <meta property="og:image" content="http://aylvisaker.github.io/MC-MATH301-SP17//MC-MATH301-SP17/assets/og-image.jpg">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:url" content="http://aylvisaker.github.io/MC-MATH301-SP17//MC-MATH301-SP17/posts/chapter-one-notes">
+  <meta name="twitter:title" content="Chapter 1 Notes">
+  <meta name="twitter:description" content="The Real and Complex Number Systems">
+  <meta name="twitter:image" content="http://aylvisaker.github.io/MC-MATH301-SP17//MC-MATH301-SP17/assets/og-image.jpg">
+
+  <link rel="apple-touch-icon" href="/MC-MATH301-SP17/assets/apple-touch-icon.png">
+  <link href="http://aylvisaker.github.io/MC-MATH301-SP17//MC-MATH301-SP17/feed.xml" type="application/rss+xml" rel="alternate" title="Math 301 - Advanced Calculus Last 10 blog posts" />
+
+  
+    <link type="text/css" rel="stylesheet" href="/MC-MATH301-SP17/assets/light.css">
+  
+
+</head>
+
+<body>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+  <main role="main">
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <nav class="header-nav reveal">
+  <a href="/MC-MATH301-SP17/" class="header-logo" title="Math 301 - Advanced Calculus">Math 301 - Advanced Calculus</a>
+  <ul class="header-links">
+      
+      
+    
+    
+      <li>
+        <a href="https://github.com/aylvisaker" target="_blank" title="GitHub">
+          <span class="icon icon-social-github"></span>
+        </a>
+      </li>
+    
+    
+    
+    
+    
+    
+      <li>
+        <a href="mailto:aylvisaker@monmouthcollege.edu" target="_blank" title="Email">
+          <span class="icon icon-at"></span>
+        </a>
+      </li>
+    
+    
+      <li>
+        <a href="/MC-MATH301-SP17/feed.xml" target="_blank" title="RSS">
+          <span class="icon icon-social-rss"></span>
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+        <article class="article reveal">
+          <header class="article-header">
+            <h1>Chapter 1 Notes</h1>
+            <p>The Real and Complex Number Systems</p>
+            <div class="article-list-footer">
+              <span class="article-list-date">
+                January 15, 2017
+              </span>
+              <span class="article-list-divider">-</span>
+              <!-- span class="article-list-minutes">
+                
+                
+                  9 minute read
+                
+              </span>
+              <span class="article-list-divider">-</span -->
+              <div class="article-list-tags">
+                
+                  <a href="/MC-MATH301-SP17/tag/notes">notes</a>
+                
+              </div>
+            </div>
+          </header>
+
+          <div class="article-content">
+            <ul>
+  <li><a href="#s1">1. Introduction</a></li>
+  <li><a href="#s2">2. Ordered Sets</a></li>
+  <li><a href="#s3">3. Fields</a></li>
+  <li><a href="#s4">4. The Real Field</a></li>
+  <li><a href="#s5">5. The Extended Real Number System</a></li>
+  <li><a href="#s6">6. The Complex Field</a></li>
+  <li><a href="#s7">7. Euclidean Spaces</a></li>
+</ul>
+
+<div id="s1" />
+
+<h1 id="1-introduction">1. Introduction</h1>
+<p>This class assumes basic familiarity with <strong>arithmetic</strong>, <strong>algebra</strong>, and <strong>sets</strong> (particularly the fundamental theorems of the former).</p>
+
+<h3 id="important-sets">Important sets</h3>
+
+<ul>
+  <li>
+    <p>The <strong>additive identity</strong> is \(0\). The <strong>multiplicative identity</strong> is \(1\). The set of <strong>natural numbers</strong> is \(\mathbb{N}\), the smallest set that contains \(\{0,1\}\) and is closed under addition, multiplication, and exponentiation (assuming, by convention, that \( 0^0=1 \)).
+\[ \mathbb{N} = \{0,1,2,\dots\} \]</p>
+  </li>
+  <li>
+    <p>The <strong>additive inverse</strong> of a number, \(n\), is the number \(-n\). The set of  <strong>integers</strong> is  \(\mathbb{Z}\), the smallest set that contains \(\mathbb{N}\) and is closed under additive inverses, addition, subtraction, and multiplication. \(\mathbb{Z}\) is not closed under exponentiation.
+\[ \mathbb{Z} = \{\dots,-2,-1,0,1,2,\dots\} \]</p>
+  </li>
+  <li>
+    <p>The <strong>multiplicative inverse</strong> of a non-zero number, \(n\), is the number \(\frac{1}{n}\). The set of <strong>rational numbers</strong> is  \(\mathbb{Q}\), the smallest set that contains \(\mathbb{Z}\) and is closed under inverses, addition, subtraction, multiplication, and non-zero division. \(\mathbb{Q}\) is not closed under exponentiation.
+\[ \mathbb{Q} = \left\{\frac{m}{n} \mid m,n\in\mathbb{Z},n\neq0\right\} \]</p>
+  </li>
+</ul>
+
+<h3 id="gaps-in-the-rational-numbers">Gaps in the rational numbers</h3>
+
+<p><strong><em>Theorem</em></strong>. \(\sqrt{2}\notin\mathbb{Q}\).</p>
+
+<p><strong><em>Proof</em></strong>. Suppose, by way of contradiction, that \(\sqrt{2} = x = \frac{a}{b}\) where \(a,b\in\mathbb{Z}\) and \(b\neq0\). Then let \(y = x^2\cdot b = 2b^2= a^2)\). Observe that \(a, b\), and \(y\) are integers, and so by the fundamental theorem of arithmetic, have unique prime factorizations.</p>
+
+<p>\[a = \prod_{k=1}^{r}p_{i_k}^{d_k}\]
+\[b = \prod_{k=1}^{s}q_{i_k}^{e_k}\]</p>
+
+<p>Now consider the prime factorization(s) of \(y\):</p>
+
+<p>\[y = a^2 = \prod_{k=1}^{r}p_{i_k}^{2d_k}\]
+\[y = 2b^2 = 2\prod_{k=1}^{s}q_{i_k}^{2e_k}\]</p>
+
+<p>These cannot be the same because the former factorization has an even exponent on the prime \(2\), while the latter has an odd exponent on the prime \(2\). This contradicts the uniqueness part of the fundamental theorem of arithmetic for the integer \(y\). Our supposition that \(\sqrt{2}\in\mathbb{Q}\) must have been incorrect. \(\Box\)</p>
+
+<h3 id="set-notation-and-basic-definitions">Set notation and basic definitions</h3>
+
+<ul>
+  <li>\(x\in S\) means that \(x\) is an <strong>element</strong> (i.e. <strong>member</strong>) of \(S\) and \(x\notin S\) means that \(x\) is <em>not</em> an element of \(S\).</li>
+  <li>\(\emptyset = \{\}\) is called the <strong>empty set</strong> and has no elements. Sets which have at least one element are called <strong>non-empty</strong>.</li>
+  <li>If \(A\) and \(B\) are sets, then
+    <ul>
+      <li>\(A\cap B = \{x\mid x\in A\text{ and } x\in B\}\) is the <strong>intersection</strong> of \(A\) and \(B\).</li>
+      <li>\(A\cup B = \{x\mid x\in A\text{ or }  x\in B\}\) is the <strong>union</strong> of \(A\) and \(B\).</li>
+      <li>\(A\subset B\) and \(B\supset A\) both convey that each element of \(A\) is also an element of \(B\). We say that \(A\) is <strong>contained</strong> in  (i.e. a <strong>subset</strong> of) \(B\).</li>
+      <li>\(A=B\) means that \(A\subset B\) and \(B\subset A\).</li>
+    </ul>
+  </li>
+</ul>
+
+<div id="s2" />
+
+<h1 id="2-ordered-sets">2. Ordered Sets</h1>
+<p><strong>Definition 1.5</strong>: An <strong>order</strong> on a set $S$ is a relation (which we denote by $&lt;$) with the following two properties:</p>
+<ul>
+  <li>If $x,y\in S$ then one and only one of the following holds:
+    <ul>
+      <li>$x&lt;y$</li>
+      <li>$y&lt;x$</li>
+      <li>$x=y$</li>
+    </ul>
+  </li>
+  <li>If $x,y,z\in S$, $x&lt;y$, and $y&lt;z$, then $x&lt;z$.</li>
+</ul>
+
+<p>The relations $\leq, &gt;, \geq$ can be defined in terms of $&lt;$ and have all of the properties you would expect.</p>
+
+<p><strong>Definition 1.6</strong>: An <strong>ordered set</strong> is a set on which an order can be defined. For example $\mathbb{Q}$ is an ordered set when $r&lt;s$ is taken to mean that $s-r$ is positive.</p>
+
+<p><strong>Definition 1.7</strong>: Suppose $S$ is an ordered set and $E\subset S$. If there is some $\beta\in S$ such that $x\leq\beta$ for every $x\in E$, then we say that $E$ is <strong>bounded above</strong> and that $\beta$ is an <strong>upper bound</strong>. <strong>Bounded below</strong> and <strong>lower bound</strong> are defined analogously.</p>
+
+<p><strong>Definition 1.8</strong>: Suppose $S$ is an ordered set and $E\subset S$ has an upper bound. Suppose that there is some $\alpha\in S$ such that:</p>
+<ul>
+  <li>$\alpha$ is an upper bound for $E$, and</li>
+  <li>if $\gamma&lt;\alpha$ then $\gamma$ is not an upper bound for $E$.
+then we say $\alpha$ is the <strong>least upper bound</strong> of $E$, or the <strong>supremum</strong> of $E$. If $\alpha$ is the supremum of $E$, we write $\alpha=\sup E$. The <strong>greatest lower bound</strong>, or <strong>infimum</strong>, is defined analogously and denoted $\alpha=\inf E$.</li>
+</ul>
+
+<p><strong>Example</strong> Let $A = \{x\in\mathbb{Q}^{+}\mid x^2&lt;2\}$ and $B = \{x\in\mathbb{Q}^{+}\mid x^2&gt;2\}$. Then $A$ has no least upper bound and $B$ has no greatest lower bound. We prove the former. Let $p$ be an upper bound for $A$, and let $q = p-\frac{p^2-2}{p+2}$. It is straightforward to show that $q\in\mathbb{Q}$. Since $p\in B$ (think about that), it follows that $p^2-2&gt;0$, so $q&lt;p$. Now consider</p>
+
+<script type="math/tex; mode=display">q^2-2=\left(\frac{2p+2}{p+2}\right)^2-2=\frac{(4p^2+8p+4)}{(p+2)^2}-\frac{2p^2+8p+8}{(p+2)^2}=\frac{2(p^2-2)}{(p+2)^2}</script>
+
+<p>Since $q^2-2&gt;0$, we conclude $q\in B$. Therefore $q$ is an upper bound for $A$, which is both rational and smaller than $p$. Given an arbitrary upper bound, we have constructed a smaller upper bound. Surely this means there can be no <em>least</em> upper bound. $\Box$</p>
+
+<p><strong>More examples</strong></p>
+<ul>
+  <li>Let $A = \{x\in\mathbb{Q}\mid x&lt;0\}$ and $B=\{x\in\mathbb{Q}\mid x\leq 0\}$. Then $\sup A = \sup B = 0$, and $0\in B$, but $0\notin A$.</li>
+  <li>Let $A = \{\frac1n\mid n\in\mathbb{Z}^{+}\}$. Then $\sup A = 1\in A$ and $\inf A = 0\notin A$.</li>
+</ul>
+
+<p><strong>Definition 1.10</strong>: An ordered set $S$ is said to have the <strong>least upper bound property</strong> if every non-empty $E\subset S$ with an upper bound has a supremum.</p>
+
+<p>The ordered set $\mathbb{Q}$ does not have the least upper bound property. The ordered set $\mathbb{Z}$ does have the least upper bound property.</p>
+
+<p><strong>Theorem 1.11</strong> If $S$ has the least upper bound property then every non-empty set which is bounded below has an infimum. One might express this by saying that $S$ also has a <em>greatest lower bound</em> property.</p>
+
+<div id="s3" />
+
+<h1 id="3-fields">3. Fields</h1>
+<p><strong>Definition 1.12</strong>: A <strong>field</strong> is a set, $F$, with two operations called <em>addition</em> and <em>multiplication</em> which satisfy the field axioms. In the following, $x$, $y$, and $z$ are arbitrary elements of $F$.</p>
+<ul>
+  <li>(A1) $F$ is closed under $+$. $x+y\in F$</li>
+  <li>(A2) $+$ is commutative. $x+y=y+x$</li>
+  <li>(A3) $+$ is associative. $(x+y)+z=x+(y+z)$</li>
+  <li>(A4) There is an element $0\in F$ such that $0+x=x$ for every $x\in F$.</li>
+  <li>(A5) For each $x\in F$ there is an element $-x\in F$ such that $x+(-x)=0$.</li>
+  <li>(M1) $F$ is closed under $\cdot$. $x\cdot y\in F$</li>
+  <li>(M2) $\cdot$ is commutative. $x\cdot y = y\cdot x$</li>
+  <li>(M3) $\cdot$ is associative. $(x\cdot y)\cdot z = x\cdot (y\cdot z)$</li>
+  <li>(M4) There is an element $1\in F$ such that $1\cdot x=x$ for every $x\in F$.</li>
+  <li>(M5) For each $x\in F$ such that $x\neq 0$, there is an element $1/x=x^{-1}\in F$ such that $x\cdot x^{-1}=1$.</li>
+  <li>(D) Multiplication distributes over addition. $x\cdot(y+z)=x\cdot y + x\cdot z$</li>
+</ul>
+
+<p>In any field, and for any integer $n$, the expressions $x-y$, $x/y$, $x+y+z$, $xyz$, $x^n$, $nx$ have their usual intended meaning. $\mathbb{Q}$ is an example of a field. $\mathbb{Z}$ is not because its elements do not have multiplicative inverses in $\mathbb{Z}$.</p>
+
+<p><strong>Propositions 1.14-1.16</strong>: Let $x,y,z$ be arbitrary elements of the field $F$.</p>
+<ul>
+  <li>If $x+y=x+z$ then $y=z$</li>
+  <li>If $x+y=x$ then $y=0$</li>
+  <li>If $x+y=0$ then $y=-x$</li>
+  <li>$-(-x)=x$</li>
+  <li>If $x\neq 0$ and $xy=xz$ then $y=z$</li>
+  <li>If $x\neq 0$ and $xy=x$ then $y=1$</li>
+  <li>If $x\neq 0$ and $xy=1$ then $y=1/x$</li>
+  <li>If $x\neq 0$ then $1/(1/x)=x$</li>
+  <li>$0\cdot x=0$</li>
+  <li>If $x\neq 0$ and $y\neq 0$ then $xy\neq 0$</li>
+  <li>$(-x)\cdot y = -(x\cdot y) = x\cdot(-y)$</li>
+  <li>$(-x)\cdot(-y) = xy$</li>
+</ul>
+
+<p><strong>Defintion 1.17</strong>: An <strong>ordered field</strong> is a field which is also an ordered set, such that the following hold:</p>
+<ul>
+  <li>$x+y&lt;x+z$ when $y&lt;z$</li>
+  <li>$xy&gt;0$ if $x&gt;0$ and $y&gt;0$</li>
+</ul>
+
+<p>$\mathbb{Q}$ is an example of an ordered field.</p>
+
+<p><strong>Proposition 1.18</strong>: Let $x,y,z$ be arbitrary elements of the ordered field $F$.</p>
+<ul>
+  <li>If $x&gt;0$ then $-x&lt;0$ and vice versa</li>
+  <li>If $x&gt;0$ and $y&lt;z$ then $xy&lt;xz$</li>
+  <li>If $x&lt;0$ and $y&lt;z$ then $xy&gt;xz$</li>
+  <li>If $x\neq 0$ then $x^2&gt;0$</li>
+  <li>If $0&lt;x&lt;y$ then $0&lt;1/y&lt;1/x$</li>
+</ul>
+
+<div id="s4" />
+
+<h1 id="4-the-real-field">4. The Real Field</h1>
+<p><strong>Theorem 1.19</strong>: There exists an ordered field $\mathbb{R}$ with the least upper bound property. Moreover, $\mathbb{Q}$ is (isomorphic to) a subfield of $\mathbb{R}$. The members of this field are called the <strong>real numbers</strong>.</p>
+
+<p>The construction of the real numbers is found in the appendix of chapter 1. The basic idea is that each real number is defined by a set of rational numbers. These sets are called <strong>cuts</strong> and any set, $S\subset\mathbb{Q}$ with the following properties is defined to be a cut.</p>
+
+<ul>
+  <li>$S\neq\emptyset$ and $S\neq\mathbb{Q}$.</li>
+  <li>If $p\in S$ and $q\in\mathbb{Q}$ with $q&lt;p$, then $q\in S$.</li>
+  <li>If $p\in S$, then $p&lt;r$ for some $r\in S$.</li>
+</ul>
+
+<p><strong>Theorem 1.20</strong>: Let $x$ and $y$ be arbitrary elements of $\mathbb{R}$.</p>
+<ul>
+  <li><em>The Archimedean Property:</em> If $x&gt;0$ then there is some $n\in\mathbb{Z}^{+}$ such that $nx&gt;y$.</li>
+  <li><em>Density of the Rationals:</em> If $x&lt;y$ then there is some $p\in\mathbb{Q}$ such that $x&lt;p&lt;y$.</li>
+</ul>
+
+<p><strong>Proposition 1.21</strong>: Let $x\in\mathbb{R}$, $x&gt;0$, and $n&gt;0$. Then there is exactly one $y\in\mathbb{R}$ such that $y^n=x$. We usually write $y=\sqrt[n]{x}$ or $y=x^{\frac1n}$.</p>
+
+<p>The above proposition simply asserts that $n^\text{th}$ roots of positive numbers exist in the real number system. We saw in the introductory section of this chapter that isn’t true of the rational number system.</p>
+
+<p><strong>“We shall never use decimals, so we do not enter into a detailed discussion of them.”</strong></p>
+
+<div id="s5" />
+
+<h1 id="5-the-extended-real-number-system">5. The Extended Real Number System</h1>
+<p><strong>Definition 1.23</strong>: The <strong>extended real number system</strong> consists of the real field $\mathbb{R}$ and two additional symbols, $\infty=+\infty$ and $-\infty$. The original order of $\mathbb{R}$ is preserved and for each $x\in\mathbb{R}$ we define $-\infty&lt;x&lt;\infty$.</p>
+
+<p>In the extended reals, every non-empty set has a least upper bound (possibly $\infty$) and a greatest lower bound (possibly $-\infty$). Every real number in this system is referred to as <em>finite</em>. The extended reals <em>do not</em> form a field, but we employ the following consistent conventions for each real number $x$:</p>
+<ul>
+  <li>$x+\infty=\infty$</li>
+  <li>$x+(-\infty) = x-\infty = -\infty$</li>
+  <li>$x/\infty=x/-\infty=0$</li>
+  <li>If $x&gt;0$ then $x\cdot\infty=\infty$ and $x\cdot-\infty=-\infty$</li>
+  <li>If $x&lt;0$ then $x\cdot\infty=-\infty$ and $x\cdot-\infty=\infty$</li>
+</ul>
+
+<p>Note in particular that we have no consistent definitions for:</p>
+<ul>
+  <li>$0\cdot\pm\infty$</li>
+  <li>$\infty-\infty$</li>
+  <li>$\pm\infty/\pm\infty$</li>
+</ul>
+
+<div id="s6" />
+
+<h1 id="6-the-complex-field">6. The Complex Field</h1>
+<p><strong>Definition 1.24</strong>: A <strong>complex number</strong> is an ordered pair $(a,b)$ of real numbers.For complex numbers $x=(a,b)$ and $y=(c,d)$ we write $x=y$ precisely when $a=c$ and $b=d$. Moreover, we define:</p>
+<ul>
+  <li>$x+y=(a+c,b+d)$</li>
+  <li>$x\cdot y=(ac-ba,ad+bc)$</li>
+</ul>
+
+<p>According to these definitions, $(0,0)$ is an additive identity and $(1,0)$ is a multiplicative identity.</p>
+
+<p><strong>Theorem 1.25</strong>: The complex numbers, $\mathbb{C}$ form a field.</p>
+
+<p><strong>Theorem 1.26</strong>: The real numbers are a subfield of the complex numbers, with $a\in\mathbb{R}$ being identified with $(a,0)\in\mathbb{C}$.</p>
+
+<p><strong>Theorems 1.27-1.29</strong>: The above definitions are consistent with familiar notations for complex numbers: $a+bi$. Where $i=(0,1)$, $a+bi$ is identified with $(a,b)$.</p>
+
+<p><strong>Definition 1.30</strong>: If $z=(a,b)=a+bi$, then $\overline{z}=(a,-b)=a-bi$, $\mathbf{Re}(z)=a$, and $\mathbf{Im}(z)=b$.</p>
+
+<p><strong>Theorem 1.31</strong>: If $z$ and $w$ are complex numbers, then:</p>
+<ul>
+  <li>$\overline{z+w}=\overline{z}+\overline{w}$</li>
+  <li>$\overline{z\cdot w}=\overline{z}\cdot\overline{w}$</li>
+  <li>$z+\overline{z}=2\mathbf{Re}(z)$</li>
+  <li>$z-\overline{z}=2\mathbf{Im}(z)$</li>
+  <li>$z\overline{z}$ is a positive real number unless $z=0$</li>
+  <li>If $z\in\mathbb{R}$ then $\overline{z}=z$</li>
+</ul>
+
+<p><strong>Definition 1.32</strong>: If $z$ is any complex number (possibly real) then $\vert z\vert = \sqrt{z\overline{z}}$.</p>
+
+<p><strong>Theorem 1.33</strong>: If $z$ and $w$ are complex numbers, then:</p>
+<ul>
+  <li>$\vert z\vert\in\mathbb{R}$</li>
+  <li>$\vert 0\vert=0$</li>
+  <li>if $z\neq0$ then $\vert z\vert &gt;0$</li>
+  <li>$\vert\overline{z}\vert=\vert z\vert$</li>
+  <li>$\vert zw\vert = \vert z\vert\cdot \vert w\vert$</li>
+  <li>$\vert\mathbf{Re}(z)\vert \leq \vert z\vert$</li>
+  <li>$\vert z+w\vert\leq \vert z\vert + \vert w\vert$</li>
+</ul>
+
+<p><strong>Sigma notation</strong>: When $x_1,\dots,x_n$ are complex numbers, in place of $x_1+x_2+\dots+x_n$ we write $\sum_{i=1}^n x_i$.</p>
+
+<p><strong>Theorem 1.35 - The Schwarz Inequality</strong>: Let $a_1,\dots,a_n$ and $b_1,\dots,b_n$ be complex numbers. Then</p>
+
+<script type="math/tex; mode=display">\left\vert \sum_{i=1}^n a_i\overline{b_i} \right\vert^2 \leq \left( \sum_{i=1}^n\left\vert a_i \right\vert^2 \right) + \left( \sum_{i=1}^n\left\vert b_i \right\vert^2 \right)</script>
+
+<div id="s7" />
+
+<h1 id="7-euclidean-spaces">7. Euclidean Spaces</h1>
+
+<p><strong>Definition 1.36</strong>: Where $k$ is a positive integer, $\mathbb{R}^k$ denotes the set of all ordered $k$-tuples, $\vec{x}=(x_1,x_2,\dots,x_k)$, where $x_1,\dots,x_k$ are real numbers, called the <strong>coordinates</strong> of $\vec{x}$. The elements of $\mathbb{R}^k$ are called <strong>points</strong> or <strong>vectors</strong> and will be denoted by boldface letters.</p>
+
+<p>The operations on vectors are addition and scalar multiplication. When $x,y\in\mathbb{R}^k$ and $\alpha\in\mathbb{R}$:</p>
+
+<script type="math/tex; mode=display">\vec x + \vec y = (x_1 + y_1, x_2 + y_2,\dots, x_k + y_k),</script>
+
+<p>and</p>
+
+<script type="math/tex; mode=display">\alpha \vec{x} = (\alpha x_1,\alpha x_2, \dots, \alpha x_k).</script>
+
+<p>Thus $\vec{x} + \vec{y}$ and $\alpha \vec{x}$ are both elements of $\mathbb{R}^k$. These operations satisfy the commutative, distributive, and associative laws.</p>
+
+<p>The set $\mathbb{R}^k$ is referred to a <strong>vector space over the real field</strong>. The <strong>zero vector</strong> is $\vec{0} = (0,\dots,0)$ and serves as an identity for vector addition.</p>
+
+<p>Given $\vec{x},\vec{y}\in\mathbb{R}^k$, we define the <strong>inner product</strong> of $\vec{x}$ and $\vec{y}$ to be:</p>
+
+<script type="math/tex; mode=display">\vec{x}\cdot\vec{y} = x_1 y_1 + \dots + x_k y_k = \sum_{i=1}^k x_i y_i.</script>
+
+<p>The <strong>norm</strong> of a vector $\vec{x}$ is defined to be:</p>
+
+<script type="math/tex; mode=display">\left\vert \vec{x} \right\vert = \left(\vec{x} \cdot \vec{x}\right)^{1/2} = \left(\sum_{i=1}^k x_i^2\right)^{1/2}</script>
+
+<p><strong>Theorem 1.37</strong> For $\vec{x}, \vec{y}, \vec{z} \in \mathbb{R}^k$ and $\alpha\in\mathbb{R}$:</p>
+<ul>
+  <li>$\vert \vec{x} \vert \geq 0$,</li>
+  <li>$\vert \vec{x} \vert = 0$ if and only if $\vec{x} = \vec{0}$,</li>
+  <li>$\vert \alpha\vec{x} \vert = \vert \alpha \vert \vert \vec{x} \vert$,</li>
+  <li>$\vert \vec{x}\cdot\vec{y} \vert \leq \vert \vec{x} \vert \vert \vec{y} \vert$,</li>
+  <li>$\vert \vec{x} + \vec{y} \vert \leq \vert \vec{x} \vert + \vert \vec{y} \vert$,</li>
+  <li>$\vert \vec{x} - \vec{z} \vert \leq \vert \vec{x} - \vec{y}\vert + \vert \vec{y} - \vec{z}\vert$</li>
+</ul>
+
+          </div>
+
+          <!-- div class="article-share">
+            
+            <a href="" title="Share on Twitter" onclick="window.open('https://twitter.com/home?status=Chapter 1 Notes - http://aylvisaker.github.io/MC-MATH301-SP17//MC-MATH301-SP17/posts/chapter-one-notes ', 'newwindow', 'width=500, height=225'); return false;">
+              <span class="icon icon-social-twitter"></span>
+            </a>
+            <a href="" title="Share on Facebook" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://aylvisaker.github.io/MC-MATH301-SP17//MC-MATH301-SP17/posts/chapter-one-notes', 'newwindow', 'width=500, height=500'); return false;">
+              <span class="icon icon-social-facebook"></span>
+            </a>
+            <a href="" title="Share on Google+" onclick="window.open('https://plus.google.com/share?url=http://aylvisaker.github.io/MC-MATH301-SP17//MC-MATH301-SP17/posts/chapter-one-notes', 'newwindow', 'width=550, height=400'); return false;">
+              <span class="icon icon-social-googleplus"></span>
+            </a>
+          </div -->
+
+          
+            <div id="disqus_thread" class="article-comments"></div>
+            <script>
+              (function() {
+                  var d = document, s = d.createElement('script');
+                  s.src = '//mc-math301-sp17.disqus.com/embed.js';
+                  s.setAttribute('data-timestamp', +new Date());
+                  (d.head || d.body).appendChild(s);
+              })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          
+        </article>
+        <footer class="footer reveal">
+  <p>
+  Created with <a href="https://jekyllrb.com/">Jekyll</a> using the <a href="https://github.com/nielsenramon/chalk">Chalk</a> theme. Edited in <a href="https://stackedit.io/">StackEdit</a>. Hosted by <a href ="https://www.github.com/">GitHub</a>.
+  </p>
+</footer>
+
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="/MC-MATH301-SP17/assets/vendor.js"></script>
+<script type="text/javascript" src="/MC-MATH301-SP17/assets/application.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Cormorant Garamond:700', 'Lato:300,400,700']
+    }
+  });
+</script>
+
+
+  <script>
+    window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+    ga('create','UA-88755650-1','auto');ga('send','pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+
+
+</body>
+</html>
