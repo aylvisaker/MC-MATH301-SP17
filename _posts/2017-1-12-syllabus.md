@@ -44,7 +44,7 @@ Scheduled exam dates are available on the course calendar. These will likely cha
 
 Exams must be written in pencil. Any exam written in pen will have 10% deducted from the final score. Listening to music and the use of electronic devices (other than calculators) is strictly forbidden. If you need to use the restroom during an exam, leave all of your things behind (especially your phone) and quietly excuse yourself (eye contact with me is good enough, no need to make a production of it).
 
-The final exam will be cumulative and takes place either on Friday, May 5 at 3:00 PM or on Monday, May 8 at 11:30 AM (depending on what the registrar says - I'll update this document when I have more information). The exam will take place in CSB 303. This exam cannot be rescheduled except under extreme circumstances.
+The final exam will be cumulative and takes place on Friday, May 5 at 3:00 PM in CSB 303. This exam cannot be rescheduled except under extreme circumstances.
 
 # Workload Expectations
 In addition to attending class each day, students should plan to spend approximately 10 hours per week working outside of class. This time should be spent reading, completing homework, studying, and making use of available resources. The figure is only an estimated average, some students may need to spend much more than 10 hours practicing in order to learn the material effectively.

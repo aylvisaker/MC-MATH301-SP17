@@ -48,9 +48,9 @@ These cannot be the same because the former factorization has an even exponent o
 
 * \\(x\\in S\\) means that \\(x\\) is an **element** (i.e. **member**) of \\(S\\) and \\(x\\notin S\\) means that \\(x\\) is *not* an element of \\(S\\).
 * \\(\\emptyset = \\{\\}\\) is called the **empty set** and has no elements. Sets which have at least one element are called **non-empty**.
-* If \\(A\\) and \\(B\\) are sets, then 
+* If \\(A\\) and \\(B\\) are sets, then
   * \\(A\\cap B = \\{x\\mid x\\in A\\text{ and } x\\in B\\}\\) is the **intersection** of \\(A\\) and \\(B\\).
-  * \\(A\\cup B = \\{x\\mid x\\in A\\text{ or }  x\\in B\\}\\) is the **union** of \\(A\\) and \\(B\\). 
+  * \\(A\\cup B = \\{x\\mid x\\in A\\text{ or }  x\\in B\\}\\) is the **union** of \\(A\\) and \\(B\\).
   * \\(A\\subset B\\) and \\(B\\supset A\\) both convey that each element of \\(A\\) is also an element of \\(B\\). We say that \\(A\\) is **contained** in  (i.e. a **subset** of) \\(B\\).
   * \\(A=B\\) means that \\(A\\subset B\\) and \\(B\\subset A\\).
 
@@ -76,7 +76,7 @@ then we say $\alpha$ is the **least upper bound** of $E$, or the **supremum** of
 
 **Example** Let $A = \\{x\in\mathbb{Q}^{+}\mid x^2<2\\}$ and $B = \\{x\in\mathbb{Q}^{+}\mid x^2>2\\}$. Then $A$ has no least upper bound and $B$ has no greatest lower bound. We prove the former. Let $p$ be an upper bound for $A$, and let $q = p-\frac{p^2-2}{p+2}$. It is straightforward to show that $q\in\mathbb{Q}$. Since $p\in B$ (think about that), it follows that $p^2-2>0$, so $q<p$. Now consider
 
-$$q^2-2=\left(\frac{2p+2}{p+2}\right)^2-2=\frac{(4p^2+8p+4)}{(p+2)^2}-\frac{2p^2+8p+8}{(p+2)^2}=\frac{2(p^2-2}{(p+2)^2}$$
+$$q^2-2=\left(\frac{2p+2}{p+2}\right)^2-2=\frac{(4p^2+8p+4)}{(p+2)^2}-\frac{2p^2+8p+8}{(p+2)^2}=\frac{2(p^2-2)}{(p+2)^2}$$
 
 Since $q^2-2>0$, we conclude $q\in B$. Therefore $q$ is an upper bound for $A$, which is both rational and smaller than $p$. Given an arbitrary upper bound, we have constructed a smaller upper bound. Surely this means there can be no *least* upper bound. $\Box$
 
@@ -108,7 +108,7 @@ The ordered set $\mathbb{Q}$ does not have the least upper bound property. The o
 In any field, and for any integer $n$, the expressions $x-y$, $x/y$, $x+y+z$, $xyz$, $x^n$, $nx$ have their usual intended meaning. $\mathbb{Q}$ is an example of a field. $\mathbb{Z}$ is not because its elements do not have multiplicative inverses in $\mathbb{Z}$.
 
 **Propositions 1.14-1.16**: Let $x,y,z$ be arbitrary elements of the field $F$.
-* If $x+y=x+z$ then $x=z$
+* If $x+y=x+z$ then $y=z$
 * If $x+y=x$ then $y=0$
 * If $x+y=0$ then $y=-x$
 * $-(-x)=x$
@@ -147,7 +147,7 @@ The construction of the real numbers is found in the appendix of chapter 1. The 
 **Theorem 1.20**: Let $x$ and $y$ be arbitrary elements of $\mathbb{R}$.
 * *The Archimedean Property:* If $x>0$ then there is some $n\in\mathbb{Z}^{+}$ such that $nx>y$.
 * *Density of the Rationals:* If $x<y$ then there is some $p\in\mathbb{Q}$ such that $x<p<y$.
-	
+
 **Proposition 1.21**: Let $x\in\mathbb{R}$, $x>0$, and $n>0$. Then there is exactly one $y\in\mathbb{R}$ such that $y^n=x$. We usually write $y=\sqrt[n]{x}$ or $y=x^{\frac1n}$.
 
 The above proposition simply asserts that $n^\text{th}$ roots of positive numbers exist in the real number system. We saw in the introductory section of this chapter that isn't true of the rational number system.
@@ -184,16 +184,16 @@ According to these definitions, $(0,0)$ is an additive identity and $(1,0)$ is a
 
 **Theorems 1.27-1.29**: The above definitions are consistent with familiar notations for complex numbers: $a+bi$. Where $i=(0,1)$, $a+bi$ is identified with $(a,b)$.
 
-**Definition 1.30**: If $z=(a,b)=a+bi$, then $\overline{z}=(a,-b)=a-bi$, $\Re(z)=a$, and $\Im(z)=b$.
+**Definition 1.30**: If $z=(a,b)=a+bi$, then $\overline{z}=(a,-b)=a-bi$, $\mathbf{Re}(z)=a$, and $\mathbf{Im}(z)=b$.
 
 **Theorem 1.31**: If $z$ and $w$ are complex numbers, then:
 * $\overline{z+w}=\overline{z}+\overline{w}$
-* $\overline{zw}=\overline{z}\overline{w}$
-* $z+\overline{z}=2\Re(z)$
-* $z-\overline{z}=2\Im(z)$
+* $\overline{z\cdot w}=\overline{z}\cdot\overline{w}$
+* $z+\overline{z}=2\mathbf{Re}(z)$
+* $z-\overline{z}=2\mathbf{Im}(z)$
 * $z\overline{z}$ is a positive real number unless $z=0$
 * If $z\in\mathbb{R}$ then $\overline{z}=z$
-	
+
 **Definition 1.32**: If $z$ is any complex number (possibly real) then $\vert z\vert = \sqrt{z\overline{z}}$.
 
 **Theorem 1.33**: If $z$ and $w$ are complex numbers, then:
@@ -202,7 +202,7 @@ According to these definitions, $(0,0)$ is an additive identity and $(1,0)$ is a
 * if $z\neq0$ then $\vert z\vert >0$
 * $\vert\overline{z}\vert=\vert z\vert$
 * $\vert zw\vert = \vert z\vert\cdot \vert w\vert$
-* $\vert\Re(z)\vert \leq \vert z\vert$
+* $\vert\mathbf{Re}(z)\vert \leq \vert z\vert$
 * $\vert z+w\vert\leq \vert z\vert + \vert w\vert$
 
 **Sigma notation**: When $x_1,\dots,x_n$ are complex numbers, in place of $x_1+x_2+\dots+x_n$ we write $\sum_{i=1}^n x_i$.
@@ -242,4 +242,4 @@ $$ \left\vert \vec{x} \right\vert = \left(\vec{x} \cdot \vec{x}\right)^{1/2} = \
 * $\vert \alpha\vec{x} \vert = \vert \alpha \vert \vert \vec{x} \vert$,
 * $\vert \vec{x}\cdot\vec{y} \vert \leq \vert \vec{x} \vert \vert \vec{y} \vert$,
 * $\vert \vec{x} + \vec{y} \vert \leq \vert \vec{x} \vert + \vert \vec{y} \vert$,
-* $\vert \vec{x} - \vec{z} \vert \leq \vert \vec{x} - \vec{y}\vert + \vert \vec{y} - \vec{z}\vert
+* $\vert \vec{x} - \vec{z} \vert \leq \vert \vec{x} - \vec{y}\vert + \vert \vec{y} - \vec{z}\vert$
